@@ -1,0 +1,28 @@
+﻿AUTOUPDATE :
+
+	-versionado
+		-> solo cambios
+		-> full version
+		-> bajar version especifica
+
+
+Desde donde
+-> Archivos de una carpeta compartida/server (Filesystem)
+-> git version
+-> FTP
+-> nube?
+
+
+cosas a tener en cuenta
+	- carpeta temporal intermediaria
+	- recursivo
+	- Ejecutor del programa
+	- independiente de cualquier aplicacion
+	- archivo de config (json)	
+	- intentar unico archivo (mas archivo config)
+	- dejar claro que esta trabajando al usuario
+
+
+
+
+
