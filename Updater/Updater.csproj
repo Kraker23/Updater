@@ -10,6 +10,7 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Authors>Kraker</Authors>
     <DebugType>portable</DebugType>
+    <ApplicationIcon>actualizar (2).ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -19,6 +20,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <WarningLevel>1</WarningLevel>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Trees\cTree2.cs" />
+    <Compile Remove="Trees\cTree2.Designer.cs" />
+    <Compile Remove="Trees\TreeClientes.cs" />
+    <Compile Remove="Trees\TreeClientes.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Trees\cTree2.resx" />
+    <EmbeddedResource Remove="Trees\TreeClientes.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="actualizar (2).ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />

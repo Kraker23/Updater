@@ -95,17 +95,17 @@ namespace Updater
         {
             cargandoDatos = false;
         }
-
+/*
         private void cCircularProgresBackground_SizeChanged(object sender, EventArgs e)
         {
             base.OnSizeChanged(e);
-            SetStandardSize();
+           // SetStandardSize();
         }
 
         private void SetStandardSize()
         {
             int _Size = Math.Max(Width, Height);
             Size = new Size(_Size, _Size);
-        }
+        }*/
     }
 }

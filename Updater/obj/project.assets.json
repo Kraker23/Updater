@@ -641,23 +641,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cristian\\.nuget\\packages\\": {},
+    "C:\\Users\\ramir-cr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Vss-db\\Updater\\Updater\\Updater.csproj",
+      "projectUniqueName": "C:\\VSS-DB\\vss-db-Cristian\\Updater\\Updater\\Updater.csproj",
       "projectName": "Updater",
-      "projectPath": "C:\\Vss-db\\Updater\\Updater\\Updater.csproj",
-      "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-      "outputPath": "C:\\Vss-db\\Updater\\Updater\\obj\\",
+      "projectPath": "C:\\VSS-DB\\vss-db-Cristian\\Updater\\Updater\\Updater.csproj",
+      "packagesPath": "C:\\Users\\ramir-cr\\.nuget\\packages\\",
+      "outputPath": "C:\\VSS-DB\\vss-db-Cristian\\Updater\\Updater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ramir-cr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -665,6 +666,7 @@
         "net6.0-windows7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },

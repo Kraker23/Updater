@@ -21,6 +21,9 @@ cosas a tener en cuenta
 	- archivo de config (json)	
 	- intentar unico archivo (mas archivo config)
 	- dejar claro que esta trabajando al usuario
+	- Crear Copia de seguridad
+	- Borrar Temporal
+	- Si falla recuperar Copia de seguridad
 
 
 

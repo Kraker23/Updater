@@ -11,7 +11,29 @@ namespace Updater.Configuration
         public int TipoUbicacion { get; set; }
         public string Version { get; set; }
         public int TipoActualizacion { get; set; }
-        public int CopiaSeguridad { get; set; }       
+        public int CopiaSeguridad { get; set; }
+        public string rutaCarpetaCliente { get; set; }
+        public string rutaCarpetaServidor { get; set; }
+        
+
+        private string _rutaCarpetaTemporal = "";  // Backing store
+        public string rutaCarpetaTemporal
+        {
+            get => _rutaCarpetaTemporal;
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    _rutaCarpetaTemporal = value;
+                }
+                else
+                {
+                    _rutaCarpetaTemporal = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Update");
+                }
+            }
+        }
+        public string rutaExeEjecutar { get; set; }
+
 
         public bool ultimaVersion
         {
@@ -26,8 +48,8 @@ namespace Updater.Configuration
         }
         public bool hacerCopiaSeguridad
         {
-            get
-            {
+            get { 
+            
                 if (CopiaSeguridad == 1)
                 {
                     return true;

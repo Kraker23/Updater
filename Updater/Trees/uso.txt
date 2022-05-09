@@ -1,0 +1,41 @@
+-	frmSincro (TreeClientes):
+
+treeClientes1.CacheUsuario = _CacheUsuario;
+                treeClientes1.FiltroCampanaMBs = lstidCampCompra;
+                treeClientes1.FiltroCadenasAlias = LstCadenaAlias; // new List<TreeClientes.FiltroCadenaAlias>();
+                treeClientes1.FiltroCadenasAliasAccion = LstCadenaAliasAccion;
+
+                treeClientes1.Start(TreeClientes.TreeLevel.Agencia, TreeClientes.TreeLevel.CadenaAlias);
+                ////LStCampanas = (from cam in _CacheUsuario.PlCampanaMaestra_cache
+                ////               join pro in _CacheUsuario.Producto_cache on cam.IdProducto equals pro.IdProducto
+                ////               join mar in _CacheUsuario.Marca_cache on pro.IdMarca equals mar.IdMarca
+                ////               join div in _CacheUsuario.Division_cache on mar.IdDivision equals div.IdDivision
+                ////               join cli in _CacheUsuario.Clientes_cache on div.IdCliente equals cli.IdCliente
+                ////               join seg in LstMbs on seg equals cam.                         
+                ////               select cam
+                //select new DatoNodoEncontrado { Agencia = ofi.CompanyId, Oficjna = ofi.OfficeNameNative, CampanaMaestraId = cam.idCampanaMaestra, ClienteId = cli.IdCliente, DivisionId = div.IdDivision, MarcaId = mar.IdMarca, ProductoId = pro.IdProducto, CodCampanaMaestra = cam.CodCampanaMaestra, Cli_Inactivo = cli.Inactivo, idCampCompra = cam.IdCampCompra, CampanaMBS = cam.CampanaMBS, UsoAdp = cam.usoAdp }
+            }
+            else if (TabSeleccionado == Mbs.Mbs.eCierre.S)
+            {
+
+                //treeClientes2.ActivarDesactivarCheckBox(true);
+                //treeClientes2.ActivarDesactivarMenu(false);
+
+
+                treeClientes2.CacheUsuario = _CacheUsuario;
+                treeClientes2.FiltroCampanaMBs = lstidCampCompra;
+                treeClientes2.FiltroCadenasAlias = LstCadenaAlias; // new List<TreeClientes.FiltroCadenaAlias>();
+                treeClientes2.FiltroCadenasAliasAccion = LstCadenaAliasAccion;
+
+                treeClientes2.Start(TreeClientes.TreeLevel.Agencia, TreeClientes.TreeLevel.CadenaAlias);
+
+
+-	AsociarPases (cTree):
+
+     arbol = new cTree(idTVCampana);
+            arbol.Dock = DockStyle.Fill;
+            arbol.MinimumSize = new System.Drawing.Size(310, 384);
+            arbol.ConfirmarEvento +=arbol_ConfirmarEvento;
+            arbol.nuevoCheckEvento+=arbol_nuevoCheckEvento;
+     arbol.Start();
+
